@@ -5,7 +5,8 @@ const images = [
         title: "UniWhal",
         description: "A unicorn and a narwhal nuzzling their horns",
         keyword: "narwhal",
-        horns: 1
+        horns: 1,
+        hairy: true
     },
     {
         url:
@@ -13,7 +14,8 @@ const images = [
         title: "Rhino Family",
         description: "Mother (or father) rhino with two babies",
         keyword: "rhino",
-        horns: 2
+        horns: 2,
+        hairy: false
     },
     {
         url:
@@ -21,7 +23,8 @@ const images = [
         title: "Unicorn Head",
         description: "Someone wearing a creepy unicorn head mask",
         keyword: "unicorn",
-        horns: 1
+        horns: 1,
+        hairy: true
     },
     {
         url:
@@ -29,7 +32,8 @@ const images = [
         title: "UniLego",
         description: "Lego figurine dressed in a unicorn outfit",
         keyword: "unilego",
-        horns: 1
+        horns: 1,
+        hairy: false
     },
     {
         url:
@@ -37,7 +41,8 @@ const images = [
         title: "Basically a unicorn",
         description: "A narwhal is basically a unicorn after all, right?",
         keyword: "narwhal",
-        horns: 1
+        horns: 1,
+        hairy: false
     },
     {
         url:
@@ -45,7 +50,8 @@ const images = [
         title: "#truth",
         description: "The truth behind narwhals",
         keyword: "narwhal",
-        horns: 1
+        horns: 1,
+        hairy: true
     },
     {
         url:
@@ -53,7 +59,8 @@ const images = [
         title: "Baby Rhino",
         description: "This is actually a figurine but it looks kinda real",
         keyword: "rhino",
-        horns: 2
+        horns: 2,
+        hairy: false
     },
     {
         url:
@@ -62,7 +69,8 @@ const images = [
         description:
             "Three horns but still, horns. And who doesn't like The Land Before Time?",
         keyword: "triceratops",
-        horns: 3
+        horns: 3,
+        hairy: false
     },
     {
         url:
@@ -70,14 +78,16 @@ const images = [
         title: "Narwhal costume",
         description: "A woman wearing a blue narwhal costume",
         keyword: "narwhal",
-        horns: 1
+        horns: 1,
+        hairy: true
     },
     {
         url: "https://www.shopmascot.com/image/cache/mascotnew/new196-800x800.jpg",
         title: "Rhino costume",
         description: "Mascots have to get their costumes somewhere",
         keyword: "rhino",
-        horns: 2
+        horns: 2,
+        hairy: true
     },
     {
         url:
@@ -85,7 +95,8 @@ const images = [
         title: "Believe",
         description: "I believe in unicorns, do you?",
         keyword: "unicorn",
-        horns: 1
+        horns: 1,
+        hairy: true
     },
     {
         url:
@@ -94,14 +105,16 @@ const images = [
         description:
             "These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?",
         keyword: "markhor",
-        horns: 2
+        horns: 2,
+        hairy: true
     },
     {
         url: "http://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi",
         title: "Baby markhor",
         description: "Even the babies are adorable",
         keyword: "markhor",
-        horns: 2
+        horns: 2,
+        hairy: true
     },
     {
         url:
@@ -109,7 +122,8 @@ const images = [
         title: "Mouflon",
         description: "Those horns though",
         keyword: "mouflon",
-        horns: 2
+        horns: 2,
+        hairy: true
     },
     {
         url: "https://cdn.modernfarmer.com/wp-content/uploads/2014/08/addax.jpg",
@@ -117,7 +131,8 @@ const images = [
         description:
             "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
         keyword: "addax",
-        horns: 2
+        horns: 2,
+        hairy: true
     },
     {
         url:
@@ -125,7 +140,8 @@ const images = [
         title: "Baby mouflon",
         description: "The cuteness that is a baby mouflon asleep",
         keyword: "mouflon",
-        horns: 2
+        horns: 2,
+        hairy: true
     },
     {
         url:
@@ -133,7 +149,8 @@ const images = [
         title: "Happy Jackson's Chameleon",
         description: "These are really common in Hawaii",
         keyword: "chameleon",
-        horns: 2
+        horns: 2,
+        hairy: false
     },
     {
         url:
@@ -141,7 +158,8 @@ const images = [
         title: "Serious Jackson's Chameleon",
         description: "This one is very serious.",
         keyword: "chameleon",
-        horns: 3
+        horns: 3,
+        hairy: false
     },
     {
         url:
@@ -149,7 +167,8 @@ const images = [
         title: "Horned Lizard",
         description: "Fave food: ants",
         keyword: "lizard",
-        horns: 100
+        horns: 100,
+        hairy: false
     },
     {
         url:
@@ -157,7 +176,8 @@ const images = [
         title: "Smaug",
         description: "Fan illustration of Smaug from 'The Hobbit'",
         keyword: "dragon",
-        horns: 100
+        horns: 100,
+        hairy: false
     }
 ];
 
