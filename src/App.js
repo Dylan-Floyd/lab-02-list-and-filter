@@ -19,14 +19,14 @@ export default class App extends React.Component {
     }
 
     render() {
+        const uniqueKeywords = [...new Set(images.map(image => image.keyword))];
         const filteredImages = images.filter(image => !this.state.keyword || (this.state.keyword === image.keyword))
         return (
             <div className="App">
                 Select a Type:
                 <select onChange={ this.handleSelectChange }>
                     <option value="">All</option>
-                    <option value="narwhal">narwhal</option>
-                    <option value="rhino">rhino</option>
+                    { uniqueKeywords.map(keyword => <option value={keyword} key={keyword}>{keyword}</option>) }
                 </select>
                 <ImageList images={filteredImages} />
             </div>
