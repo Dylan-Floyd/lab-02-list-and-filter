@@ -1,64 +1,42 @@
 import React from 'react';
 import './App.css';
-import images from './data.js';
-import ImageList from './ImageList.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Gallery from './Gallery/Gallery.js';
+import Home from './Home/Home.js';
 
 export default class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            type: '',
-            horns: -1,
-            hairy: 'any'
-        }
-    }
+  render() {
+    return (
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/gallery">Gallery</Link>
+              </li>
+            </ul>
+          </nav>
 
-    handleTypeChange = (e) => {
-        this.setState({
-            type: e.target.value
-        })
-    }
-
-    handleHornCountChange = (e) => {
-        this.setState({
-            horns: e.target.value === '' ? -1 : Number(e.target.value)
-        })
-    }
-
-    handleHairyChange = (e) => {
-        this.setState({
-            hairy: e.target.value === 'any' ? 'any' : Boolean(e.target.value) 
-        })
-    }
-
-    render() {
-        const uniqueKeywords = [...new Set(images.map(image => image.keyword))];
-        const uniqueHornCounts = [...new Set(images.map(image => image.horns))];
-        return (
-            <div className="App">
-                <h2>Creatures With Horns</h2>
-
-                Select a Type:
-                <select onChange={ this.handleTypeChange }>
-                    <option value="">All</option>
-                    { uniqueKeywords.map(keyword => <option value={keyword} key={keyword}>{keyword}</option>) }
-                </select>
-
-                Select a Horn Count:
-                <select onChange={ this.handleHornCountChange }>
-                    <option value="">Any</option>
-                    { uniqueHornCounts.map(horns => <option value={horns} key={horns}>{horns}</option>) }
-                </select>
-
-                Do you prefer hairy creatures?
-                <select onChange={ this.handleHairyChange }>
-                    <option value="any">No Preference</option>
-                    <option value="true">Yes</option>
-                    <option value="">No</option>
-                </select>
-
-                <ImageList images={images} {...this.state}/>
-            </div>
-        );
-    }
+          {/* A <Switch> looks through its children <Route>s and
+                    renders the first one that matches the current URL. */}
+          <Switch>
+            <Route path="/gallery">
+              <Gallery />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
